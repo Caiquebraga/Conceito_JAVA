@@ -1,3 +1,4 @@
+import Orientação_A_Objetos.Construtores.Construtor;
 import Orientação_A_Objetos.Encapsulamento.InternetBank;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -25,6 +26,21 @@ public class Main {
 
             conta.sacar(2000.00);
             System.out.println("Saldo em conta: R$ " + conta.getSaldo());
+
+            //CONSTRUTOR NOME
+            Construtor pessoa = new Construtor("Caique");
+            System.out.println("Nome: " + pessoa.getName());
+
+            pessoa.SetName("Caique Braga");
+            System.out.println("Novo nome: " + pessoa.getName());
+
+            //CONSTRUTOR IDADE
+            Construtor idadePessoa = new Construtor(29);
+
+            System.out.println("Idade: " + idadePessoa.getIdade());
+
+            idadePessoa.setIdade(30);
+            System.out.println("Nova idade: " + idadePessoa.getIdade());
         }
     }
 }
